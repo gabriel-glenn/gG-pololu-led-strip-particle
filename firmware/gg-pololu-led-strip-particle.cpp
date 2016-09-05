@@ -1,3 +1,4 @@
 #include <gg-pololu-led-strip-particle.h>
+#include <Arduino.h>
 
-bool PololuLedStripBase::interruptFriendly = false;
+bool gg-pololu-led-strip-particle-base::interruptFriendly = false;
