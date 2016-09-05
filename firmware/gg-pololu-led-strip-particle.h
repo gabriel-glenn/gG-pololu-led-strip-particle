@@ -32,7 +32,7 @@ namespace Pololu
   } rgb_color;
   #endif
 
-  class PololuLedStripBase
+  class gg-pololu-led-strip-particle-base
   {
     public:
     static bool interruptFriendly;
