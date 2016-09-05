@@ -39,7 +39,7 @@ namespace Pololu
     void virtual write(rgb_color *, unsigned int count) = 0;
   };
 
-  template<unsigned char pin> class gg-pololu-led-strip-particle : public gg-pololu-led-strip-base
+  template<unsigned char pin> class gg-pololu-led-strip-particle : public gg-pololu-led-strip-particle-base
   {
     public:
     void virtual write(rgb_color *, unsigned int count);
@@ -355,7 +355,7 @@ namespace Pololu
 
       #endif
 
-      if (gg-pololu-led-strip-base::interruptFriendly)
+      if (gg-pololu-led-strip-particle-base::interruptFriendly)
       {
         // Experimentally on an AVR we found that one NOP is required after the SEI to actually let the
         // interrupts fire.
