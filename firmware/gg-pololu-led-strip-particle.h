@@ -39,7 +39,7 @@ namespace Pololu
     void virtual write(rgb_color *, unsigned int count) = 0;
   };
 
-  template<unsigned char pin> class PololuLedStrip : public PololuLedStripBase
+  template<unsigned char pin> class gg-pololu-led-strip-particle : public gg-pololu-led-strip-base
   {
     public:
     void virtual write(rgb_color *, unsigned int count);
@@ -220,7 +220,7 @@ namespace Pololu
 
   #endif
 
-  template<unsigned char pin> void __attribute__((aligned(16))) PololuLedStrip<pin>::write(rgb_color * colors, unsigned int count)
+  template<unsigned char pin> void __attribute__((aligned(16))) gg-pololu-led-strip-particle<pin>::write(rgb_color * colors, unsigned int count)
   {
     #if defined(__AVR__)
     digitalWrite(pin, LOW);
@@ -355,7 +355,7 @@ namespace Pololu
 
       #endif
 
-      if (PololuLedStripBase::interruptFriendly)
+      if (gg-pololu-led-strip-base::interruptFriendly)
       {
         // Experimentally on an AVR we found that one NOP is required after the SEI to actually let the
         // interrupts fire.
