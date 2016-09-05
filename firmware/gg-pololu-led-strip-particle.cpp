@@ -1,3 +1,3 @@
-#include <PololuLedStrip.h>
+#include <gg-pololu-led-strip-particle.h>
 
 bool PololuLedStripBase::interruptFriendly = false;
