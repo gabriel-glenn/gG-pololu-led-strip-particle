@@ -14,7 +14,7 @@ typedef enum PinMode
   AN_INPUT  			//Used internally for ADC Input
 } PinMode;
 
-#include "uber-library-example.h"
+#include "gg-pololu-led-strip-particle.h"
 
 int main()
 {
